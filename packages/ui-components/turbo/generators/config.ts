@@ -19,12 +19,13 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         path: "src/{{kebabCase name}}.tsx",
         templateFile: "templates/component.hbs",
       },
-      {
-        type: "append",
-        path: "package.json",
-        pattern: /"exports": {(?<insertion>)/g,
-        template: '    "./{{kebabCase name}}": "./src/{{kebabCase name}}.tsx",',
-      },
+      // For UI, we may not need the append on exports, we want to export every component on the UI package
+      // {
+      //   type: "append",
+      //   path: "package.json",
+      //   pattern: /"exports": {(?<insertion>)/g,
+      //   template: '    "./{{kebabCase name}}": "./src/{{kebabCase name}}.tsx",',
+      // },
     ],
   });
 }
