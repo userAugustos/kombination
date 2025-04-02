@@ -1,9 +1,9 @@
+import swagger from '@elysiajs/swagger';
 import { Elysia } from 'elysia'
 
+const x = Bun.env.PORT;
 
-const x = process.env.PORT;
-
-const app = new Elysia()
+const app = new Elysia().use(swagger())
   .get('/', () => 'Hello Kombination')
   .listen(process.env.PORT)
 
