@@ -1,0 +1,4 @@
+{
+  "extends": "@packages/ts-config/server.json",
+  "include": ["bun.d.ts"]
+}
