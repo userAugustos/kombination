@@ -5,7 +5,7 @@
     "clientKind": "git",
     "useIgnoreFile": false
   },
-  "files": { "ignoreUnknown": false, "ignore": ["*/tsconfig*.json"] },
+  "files": { "ignoreUnknown": false, "ignore": ["*/tsconfig*.json", "node_modules", "dist", ".turbo"] },
   "formatter": { "enabled": true, "indentStyle": "tab" },
   "organizeImports": { "enabled": true },
   "linter": {
