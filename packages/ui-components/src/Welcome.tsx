@@ -1,4 +1,5 @@
 import kombiGif from './assets/welcome-kombi.mp4';
+import { Button } from './shadcn/button';
 
 function Welcome() {
   return (

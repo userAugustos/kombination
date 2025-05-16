@@ -1,4 +1,4 @@
-import Welcome from '@kombination/ui-components/Welcome';
+import Welcome from '@kombination/ui-components/Welcome.tsx';
 
 function App() {
   return (
